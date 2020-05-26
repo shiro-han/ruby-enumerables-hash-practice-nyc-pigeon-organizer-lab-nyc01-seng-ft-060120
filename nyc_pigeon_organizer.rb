@@ -4,7 +4,12 @@ def nyc_pigeon_organizer(data)
   data.each_with_object({}) do |(out_key, out_value, output)|
     out_value.each do |in_key, names|
       names.each do |name|
-
+        if !output[name]
+          output[name] = {}
+        end
+        if !output[name][in_key]
+          output[name][in_key] = []
+        end
         binding.pry
       end
     end
