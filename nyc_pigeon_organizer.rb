@@ -7,8 +7,6 @@ def nyc_pigeon_organizer(data)
         if !output[name]
           output[name] = {}
         end
-        if !output[name][out_key]
-        end
         binding.pry
       end
     end
