@@ -14,8 +14,7 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  binding.pry
-  myHash
+  output
 end
 
 =begin
