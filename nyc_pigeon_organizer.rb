@@ -7,9 +7,9 @@ def nyc_pigeon_organizer(data)
         output[name] = {}
       end
       if !output[name][out_key]
-        output[name][in_key] = []
+        output[name][out_key] = []
       end
-      output[name][in_key].push()
+      output[name][out_key].push(in_key)
       binding.pry
     end
   end
