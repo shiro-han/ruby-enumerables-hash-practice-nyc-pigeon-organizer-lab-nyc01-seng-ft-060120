@@ -4,7 +4,6 @@ def nyc_pigeon_organizer(data)
   myHash = data.each_with_object({}) do |(out_key, out_value, output)|
     out_value.each do |in_key, names|
       names.each do |name|
-        binding.pry
         if !output[name]
           output[name] = {}
         end
