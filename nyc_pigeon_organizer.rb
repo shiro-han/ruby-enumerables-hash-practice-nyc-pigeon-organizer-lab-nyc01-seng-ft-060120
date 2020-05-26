@@ -1,8 +1,15 @@
 require 'pry'
 
 def nyc_pigeon_organizer(data)
-  data.each_with_object({}) do |(in_key, in_value, output)|
-    in_value.each do |out_key, names|
+  data.each_with_object({}) do |(out_key, out_value, output)|
+    out_value.each do |in_key, names|
+      if !output[name]
+        output[name] = {}
+      end
+      if !output[name][out_key]
+        output[name][in_key] = []
+      end
+      output[name][in_key].push()
       binding.pry
     end
   end
