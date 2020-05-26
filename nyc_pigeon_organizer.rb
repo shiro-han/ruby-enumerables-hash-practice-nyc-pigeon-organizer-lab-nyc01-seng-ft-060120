@@ -1,7 +1,7 @@
 require 'pry'
 
 def nyc_pigeon_organizer(data)
-  myHash = data.each_with_object({}) do |(out_key, out_value, output)|
+  myHash = data.each_with_object({}) do |(out_key, out_value), output|
     out_value.each do |in_key, names|
       names.each do |name|
         if !output[name]
