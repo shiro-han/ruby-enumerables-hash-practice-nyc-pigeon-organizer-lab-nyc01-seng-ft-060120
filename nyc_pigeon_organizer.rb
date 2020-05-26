@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(data)
           output[name][out_key] = []
         end
         x = in_key.to_sym
-        output[name][out_key].push(s)
+        output[name][out_key].push(x)
       end
     end
   end
