@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
         if !output[name][out_key]
           output[name][out_key] = []
         end
-        x = in_key.to_sym
+        x = in_key.to_s
         output[name][out_key].push(x)
       end
     end
