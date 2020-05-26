@@ -2,9 +2,10 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   data.each_with_object({}) do |(in_key, in_value, output)|
-    binding.pry
+    in_value.each do |out_key, names|
+      binding.pry
+    end
   end
-  binding.pry
 end
 
 =begin
